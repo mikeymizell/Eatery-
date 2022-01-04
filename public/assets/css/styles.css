@@ -1,0 +1,13 @@
+#nav {
+    background-color: #fcfd95;
+    height: 130px;
+}
+
+#recipe-cards {
+    background-color: #B28764;
+    height: 1000px;
+}
+
+#top-recipe, #recipes {
+    background-color: #efebdd;
+}
