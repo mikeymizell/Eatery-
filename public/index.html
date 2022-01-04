@@ -9,94 +9,95 @@
     <title>Eatery</title>
 </head>
 
-<body>
-    <nav class="navbar" role="navigation" id="nav">
-        <div class="navbar-brand ml-5 mt-5">
-            <a class="title is-1">Eatery</a>
-        </div>
+    <body>
+        <nav class="navbar" role="navigation" id="nav">
+            <div class="navbar-brand ml-5 mt-5">
+                <a class="title is-1">Eatery</a>
+            </div>
 
-        <div class="navbar-menu">
-            <div class="navbar-end">
-                <a class="navbar-item">
-                    Breakfast
-                </a>
-                <a class="navbar-item">
-                    Lunch
-                </a>
-                <a class="navbar-item">
-                    Dinner
-                </a>
-                <a class="navbar-item">
-                    Dessert
-                </a>
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">
-                        More
+            <div class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item">
+                        Breakfast
                     </a>
-        
-                    <div class="navbar-dropdown">
-                        <a class="navbar-item">
-                            Vegan
+                    <a class="navbar-item">
+                        Lunch
+                    </a>
+                    <a class="navbar-item">
+                        Dinner
+                    </a>
+                    <a class="navbar-item">
+                        Dessert
+                    </a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            More
                         </a>
-                        <a class="navbar-item">
-                            Vegetarian
-                        </a>
-                        <a class="navbar-item">
-                            Pescatarian
-                        </a>
+            
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item">
+                                Vegan
+                            </a>
+                            <a class="navbar-item">
+                                Vegetarian
+                            </a>
+                            <a class="navbar-item">
+                                Pescatarian
+                            </a>
+                        </div>
                     </div>
+                    
                 </div>
                 
+
+                <section class="control mt-5" id="login">
+                    <input class="input is-focused" type="text" placeholder="Username"></input>
+                    <input class="input is-focused" type="password" placeholder="Password"></input>
+                </section>
             </div>
-            
 
-            <section class="control mt-5" id="login">
-                <input class="input is-focused" type="text" placeholder="Username"></input>
-                <input class="input is-focused" type="password" placeholder="Password"></input>
-            </section>
-        </div>
+        </nav>
 
-    </nav>
-
-    <section class="container mt-4">
-        <input class="input is-medium" type="text" placeholder="Search..." id="search-query"></input>
-    </section>
+        <section class="container mt-4">
+            <input class="input is-medium" type="text" placeholder="Search..." id="search-query"></input>
+        </section>
+        
+        <section class="tile is-ancestor mt-5" id="recipe-cards">
+            <div class="tile is-parent mt-3" id="top-recipe">
+                <article class="tile is-child">
+                    <div class="content">
+                        <p class="title">Top Post</p>
+                        <p class="subtitle">Beef Casserole</p>
+                        <span class="content">
+                            This is the best beef casserole you will ever lay your eyes on.
+                        </span>
+                    </div>
+                </article>
+            </div>
+            <div class="tile is-parent is-vertical mt-3" id="recipes">
+                <article class="tile is-child">
+                    <p class="title">Not so good food</p>
+                    <p class="subtitle">Worst foot fungus Recipe</p>
+                    <div class="content">
+                        I don't even understand why I do this to myself.
+                    </div>
+                </article>
+                <article class="tile is-child">
+                    <p class="title">Not so good food</p>
+                    <p class="subtitle">Worst foot fungus Recipe</p>
+                    <div class="content">
+                        I don't even understand why I do this to myself.
+                    </div>
+                </article>
+                <article class="tile is-child">
+                    <p class="title">Not so good food</p>
+                    <p class="subtitle">Worst foot fungus Recipe</p>
+                    <div class="content">
+                        I don't even understand why I do this to myself.
+                    </div>
+                </article>
+            </div>
+        </section>
+    </body>
     
-    <section class="tile is-ancestor mt-5" id="recipe-cards">
-        <div class="tile is-parent mt-3" id="top-recipe">
-            <article class="tile is-child">
-                <div class="content">
-                    <p class="title">Top Post</p>
-                    <p class="subtitle">Beef Casserole</p>
-                    <span class="content">
-                        This is the best beef casserole you will ever lay your eyes on.
-                    </span>
-                </div>
-            </article>
-        </div>
-        <div class="tile is-parent is-vertical mt-3" id="recipes">
-            <article class="tile is-child">
-                <p class="title">Not so good food</p>
-                <p class="subtitle">Worst foot fungus Recipe</p>
-                <div class="content">
-                    I don't even understand why I do this to myself.
-                </div>
-            </article>
-            <article class="tile is-child">
-                <p class="title">Not so good food</p>
-                <p class="subtitle">Worst foot fungus Recipe</p>
-                <div class="content">
-                    I don't even understand why I do this to myself.
-                </div>
-            </article>
-            <article class="tile is-child">
-                <p class="title">Not so good food</p>
-                <p class="subtitle">Worst foot fungus Recipe</p>
-                <div class="content">
-                    I don't even understand why I do this to myself.
-                </div>
-            </article>
-        </div>
-    </section>
-</body>
 </html>
