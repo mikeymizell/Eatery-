@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <title>Eatery</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        <link rel="stylesheet" href="./assets/css/styles.css">
+        <title>Eartery</title>
 
-    <body>
         <nav class="navbar" role="navigation" id="nav">
             <div class="navbar-brand ml-5 mt-5">
-                <a class="title is-1">Eatery</a>
+                <a class="title is-1" href="">Eatery</a>
             </div>
 
-            <div class="navbar-menu">
+            <div class="navbar-menu mr-3">
                 <div class="navbar-end">
                     <a class="navbar-item">
                         Breakfast
@@ -50,54 +48,76 @@
                 </div>
                 
 
-                <section class="control mt-5" id="login">
-                    <input class="input is-focused" type="text" placeholder="Username"></input>
-                    <input class="input is-focused" type="password" placeholder="Password"></input>
+                <section class="control mt-4" id="login">
+                    <input class="input is-small" type="text" placeholder="Username"></input>
+                    <input class="input is-small mt-1" type="password" placeholder="Password"></input>
+                    <button class="mt-1" type="button">Log In</button>
                 </section>
             </div>
 
         </nav>
+    </head>
 
-        <section class="container mt-4">
-            <input class="input is-medium" type="text" placeholder="Search..." id="search-query"></input>
-        </section>
-        
-        <section class="tile is-ancestor mt-5" id="recipe-cards">
-            <div class="tile is-parent mt-3" id="top-recipe">
-                <article class="tile is-child">
-                    <div class="content">
-                        <p class="title">Top Post</p>
-                        <p class="subtitle">Beef Casserole</p>
-                        <span class="content">
-                            This is the best beef casserole you will ever lay your eyes on.
-                        </span>
-                    </div>
-                </article>
+    <body>
+        <section class="hero is-Large" id="hero">
+            <div class="hero-body" id="hero-body">
+                <p class="title is-1 m-4">
+                    Welcome to Eatery Recipe Book!
+                </p>
+                <p class="subtitle is-3 m-4">
+                    Homecooked meals right from the hearts of your homes.
+                </p>
+                <p class="subtitle is-4 m-4 mt-5 has-centered-text">
+                    We provide a blog for you to post recipes to share with others!<br>
+                    A place to browse new recipes to try for a special occassion.<br>
+                    A community to share and learn some new cooking tricks!<br>
+                    <br>
+                    Get started here.
+                </p>
             </div>
-            <div class="tile is-parent is-vertical mt-3" id="recipes">
-                <article class="tile is-child">
-                    <p class="title">Not so good food</p>
-                    <p class="subtitle">Worst foot fungus Recipe</p>
-                    <div class="content">
-                        I don't even understand why I do this to myself.
+
+            <section class="p-5" id="sign-up-form">
+                <div class="field">
+                    <label class="label">Name</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="First Name Last Name">
                     </div>
-                </article>
-                <article class="tile is-child">
-                    <p class="title">Not so good food</p>
-                    <p class="subtitle">Worst foot fungus Recipe</p>
-                    <div class="content">
-                        I don't even understand why I do this to myself.
+                </div>
+    
+                <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control">
+                        <input class="input" type="email" placeholder="Email Address">
                     </div>
-                </article>
-                <article class="tile is-child">
-                    <p class="title">Not so good food</p>
-                    <p class="subtitle">Worst foot fungus Recipe</p>
-                    <div class="content">
-                        I don't even understand why I do this to myself.
+                </div>
+
+                <div class="field">
+                    <label class="label">Username</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Email Address">
                     </div>
-                </article>
-            </div>
+                </div>
+    
+                <div class="field">
+                    <label class="label">Date of Birth</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Date of Birth">
+                    </div>
+                </div>
+    
+                <div class="field">
+                    <label class="label">Password</label>
+                    <div class="control">
+                        <input class="input" type="password" placeholder="********">
+                    </div>
+                </div>
+
+                <div class="control">
+                    <p class="button">
+                        Sign Up
+                    </p>
+                </div>
+            </section>
         </section>
     </body>
-    
 </html>
