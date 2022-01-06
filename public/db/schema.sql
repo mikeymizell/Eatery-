@@ -1,5 +1,4 @@
-DROP DATABASE IF EXISTS blog_posts;
-DATABASE blog_posts;
+CREATE DATABASE blog_posts;
 USE blog_posts;
  
 CREATE TABLE user_accounts(
