@@ -9,9 +9,19 @@
     border-radius: 20px;
 }
 
-.recipe-container {
+.recipe-container, #hero {
     background-image: url(/public/assets/images/pastelSand.jpg);
     background-size: cover;
+    height: 1100px;
+}
+
+#hero {
+    height: 975px;
+}
+
+#hero-body {
+    position: absolute;
+    top: 35%;
 }
 
 .top-recipe, .recipes {
@@ -21,4 +31,14 @@
 
 .search-bar {
     width: 50%;
+}
+
+#sign-up-form {
+    width: 25%;
+    position: absolute;
+    top: 35%;
+    left: 65%;
+
+    background-color: #FFF393;
+    border-radius: 20px;
 }
