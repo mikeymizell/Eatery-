@@ -10,7 +10,7 @@
 }
 
 .recipe-container, #hero {
-    background-image: url(/public/assets/images/pastelSand.jpg);
+    background-image: url(/assets/images/pastelSand.jpg);
     background-size: cover;
     height: 1100px;
 }
