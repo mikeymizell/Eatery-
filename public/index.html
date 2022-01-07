@@ -15,16 +15,16 @@
 
             <div class="navbar-menu mr-3">
                 <div class="navbar-end">
-                    <a class="navbar-item">
+                    <a class="navbar-item" href="./blog.html">
                         Breakfast
                     </a>
-                    <a class="navbar-item">
+                    <a class="navbar-item" href="./blog.html">
                         Lunch
                     </a>
-                    <a class="navbar-item">
+                    <a class="navbar-item" href="./blog.html">
                         Dinner
                     </a>
-                    <a class="navbar-item">
+                    <a class="navbar-item" href="./blog.html">
                         Dessert
                     </a>
                     <div class="navbar-item has-dropdown is-hoverable">
@@ -33,13 +33,13 @@
                         </a>
             
                         <div class="navbar-dropdown">
-                            <a class="navbar-item">
+                            <a class="navbar-item" href="./blog.html">
                                 Vegan
                             </a>
-                            <a class="navbar-item">
+                            <a class="navbar-item" href="./blog.html">
                                 Vegetarian
                             </a>
-                            <a class="navbar-item">
+                            <a class="navbar-item" href="./blog.html">
                                 Pescatarian
                             </a>
                         </div>
@@ -49,9 +49,9 @@
                 
 
                 <section class="control mt-4" id="login">
-                    <input class="input is-small" type="text" placeholder="Username"></input>
-                    <input class="input is-small mt-1" type="password" placeholder="Password"></input>
-                    <button class="mt-1" type="button">Log In</button>
+                    <input class="input is-small" type="text" placeholder="Username" id="login-user">
+                    <input class="input is-small mt-1" type="password" placeholder="Password" id="login-pw">
+                    <button class="mt-1" type="button" id="login-button">Log In</button>
                 </section>
             </div>
 
@@ -80,44 +80,46 @@
                 <div class="field">
                     <label class="label">Name</label>
                     <div class="control">
-                        <input class="input" type="text" placeholder="First Name Last Name">
+                        <input class="input" type="text" placeholder="First Name Last Name" id="name">
                     </div>
                 </div>
     
                 <div class="field">
                     <label class="label">Email</label>
                     <div class="control">
-                        <input class="input" type="email" placeholder="Email Address">
+                        <input class="input" type="email" placeholder="Email Address" id="email">
                     </div>
                 </div>
 
                 <div class="field">
                     <label class="label">Username</label>
                     <div class="control">
-                        <input class="input" type="text" placeholder="Email Address">
+                        <input class="input" type="text" placeholder="Username" id="username">
                     </div>
                 </div>
     
                 <div class="field">
                     <label class="label">Date of Birth</label>
                     <div class="control">
-                        <input class="input" type="text" placeholder="Date of Birth">
+                        <input class="input" type="text" placeholder="Date of Birth" id="dob">
                     </div>
                 </div>
     
                 <div class="field">
                     <label class="label">Password</label>
                     <div class="control">
-                        <input class="input" type="password" placeholder="********">
+                        <input class="input" type="password" placeholder="********" id="password">
                     </div>
                 </div>
 
-                <div class="control">
+                <div class="control" id="sign-up-button">
                     <p class="button">
                         Sign Up
                     </p>
                 </div>
             </section>
         </section>
+
+        <script src="./assets/js/index.js"></script>
     </body>
 </html>
