@@ -1,0 +1,20 @@
+CREATE DATABASE blog_posts;
+USE blog_posts;
+ 
+CREATE TABLE user_accounts(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    username VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    password_ VARCHAR(255) NOT NULL,
+);
+ 
+CREATE TABLE food_groups(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    group_name VARCHAR(255) NOT NULL,
+);
+ 
+CREATE TABLE recipes(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    recipe_name VARCHAR(255) NOT NULL,
+);
+
