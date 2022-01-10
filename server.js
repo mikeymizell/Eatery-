@@ -8,6 +8,10 @@ app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+app.get('/profile', (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/profile.html'));
+})
+
 app.get('/recipes', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/blog.html'));
 })
