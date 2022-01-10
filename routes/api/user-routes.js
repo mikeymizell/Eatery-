@@ -1,5 +1,6 @@
 const router = require('express').Router();
-const { User } = require('../../models');
+const { User, Recipe } = require('../../models');
+const sequelize = require('../../config/connection');
 
 router.get('/', (req, res) => {
     User.findAll({
@@ -17,7 +18,13 @@ router.get('/:id', (req, res) => {
         attributes: { exclude: ['password'] },
         where: {
             id: req.params.id
-        }
+        },
+        include: [
+            {
+                model: Recipe,
+                attributes: ['id', 'recipe_name', 'ingredients', 'created_at']
+            }
+        ]
     })
         .then(dbUserData => {
             if (!dbUserData) {
@@ -67,8 +74,7 @@ router.post('/login', (req, res) => {
             }
 
             res.json({ user: dbUserData, message: 'You are now logged in!' });
-        })
-        
+        });
 })
 
 router.put('/:id', (req, res) => {

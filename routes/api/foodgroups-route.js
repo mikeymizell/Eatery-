@@ -10,11 +10,21 @@ router.get('/', (req, res) => {
         });
 })
 
-router.delete('/:id', (req, res) => {
+router.post('/', (req, res) => {
+    FoodGroups.create({
+        group_name: req.body.group_name
+    })
+        .then(dbFGData => res.json(dbFGData))
+        .catch(err => {
+            console.log(err);
+            res.status(500).json(err);
+        })
+})
+
+router.delete('/', (req, res) => {
     FoodGroups.destroy({
-        where: {
-            id: req.params.id
-        }
+        where: {},
+        truncate: true
     })
         .then(dbFGData => {
             if (!dbFGData) {

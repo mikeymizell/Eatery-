@@ -15,6 +15,7 @@ FoodGroups.init(
         group_name: {
             type: DataTypes.STRING,
             allowNull: false,
+            unique: true
         }
     },
     {
@@ -25,31 +26,5 @@ FoodGroups.init(
         modelName: 'food_groups'
     }
 )
-
-if (!FoodGroups.group_name) {
-    FoodGroups.bulkCreate([
-        {
-            group_name: 'Breakfast'
-        },
-        {
-            group_name: 'Lunch'
-        },
-        {
-            group_name: 'Dinner'
-        },
-        {
-            group_name: 'Dessert'
-        },
-        {
-            group_name: 'Vegan'
-        },
-        {
-            group_name: 'Vegetarian'
-        },
-        {
-            group_name: 'Pescetarian'
-        }
-    ])
-}
 
 module.exports = FoodGroups;
