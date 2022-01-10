@@ -29,16 +29,33 @@
             <div class="columns is-justify-content-center">
                 <section class="column is-half mt-4" id="recipe-form">
                     <div class="field">
+                        <label class="label">Food Group</label>
+                        <p class="control">
+                            <div class="select">
+                                <select>
+                                    <option>Breakfast</option>
+                                    <option>Lunch</option>
+                                    <option>Dinner</option>
+                                    <option>Dessert</option>
+                                    <option>Vegan</option>
+                                    <option>Vegetarian</option>
+                                    <option>Pescetarian</option>
+                                </select>
+                            </div>
+                        </p>
+                    </div>
+
+                    <div class="field">
                         <label class="label">Recipe Name</label>
                         <p class="control">
                             <input class="input" type="text">
                         </p>
                     </div>
-    
+
                     <div class="field">
-                        <label class="label">Recipe Name</label>
+                        <label class="label">Ingredients</label>
                         <p class="control">
-                            <input class="input" type="text">
+                            <textarea class="textarea"></textarea>
                         </p>
                     </div>
     
@@ -49,10 +66,12 @@
                         </p>
                     </div>
 
-                    <div class="control">
-                        <p class="button">
-                            Submit Recipe
-                        </p>
+                    <div class="field">
+                        <span class="control">
+                            <p class="button">
+                                Submit Recipe
+                            </p>
+                        </span>
                     </div>
                 </section>
             </div>
